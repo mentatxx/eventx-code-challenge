@@ -1,6 +1,6 @@
 import type { AWS } from '@serverless/typescript';
 
-import crawler from '@functions/cryptonator-crawler';
+import crawler from './src/functions/cryptonator-crawler';
 
 const serverlessConfiguration: AWS = {
   service: 'cryptonator-crawler',

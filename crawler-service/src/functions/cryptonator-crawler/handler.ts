@@ -1,6 +1,6 @@
-import type { ValidatedEventAPIGatewayProxyEvent } from '@libs/apiGateway';
-import { formatJSONResponse } from '@libs/apiGateway';
-import { middyfy } from '@libs/lambda';
+import type { ValidatedEventAPIGatewayProxyEvent } from '../../libs/apiGateway';
+import { formatJSONResponse } from '../../libs/apiGateway';
+import { middyfy } from '../../libs/lambda';
 import { crawlCryptonator } from './crawl';
 import { persistTickers } from './persist';
 import schema from './schema';
