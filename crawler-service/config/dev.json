@@ -1,0 +1,4 @@
+{
+    "profile": "mentat",
+    "S3URN": "arn:aws:s3:::eventx-data"
+}

@@ -1,5 +1,4 @@
 import type { AWS } from '@serverless/typescript';
-
 import crawler from './src/functions/cryptonator-crawler';
 
 const serverlessConfiguration: AWS = {
@@ -8,6 +7,7 @@ const serverlessConfiguration: AWS = {
   plugins: ['serverless-esbuild'],
   provider: {
     name: 'aws',
+    profile: "${file(./config/${opt:stage, 'dev'}.json):profile}",
     runtime: 'nodejs14.x',
     apiGateway: {
       minimumCompressionSize: 1024,
@@ -17,6 +17,13 @@ const serverlessConfiguration: AWS = {
       AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1',
       NODE_OPTIONS: '--enable-source-maps --stack-trace-limit=1000',
     },
+    iamRoleStatements: [
+      {
+        Effect: 'Allow',
+        Action: '*',
+        Resource: "${file(./config/${opt:stage, 'dev'}.json):S3URN}",
+      },
+    ],
     lambdaHashingVersion: '20201221',
   },
   // import the function via paths
