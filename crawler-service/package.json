@@ -6,7 +6,7 @@
   "scripts": {
     "cross-env": "cross-env",
     "sls": "sls",
-    "local": "sls invoke local -f crawler --path src/functions/cryptonator-crawler/mock.json --aws-profile mentat",
+    "local": "cross-env AWS_PROFILE=mentat sls invoke local -f crawler --path src/functions/cryptonator-crawler/mock.json",
     "deploy": "sls deploy --stage dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
