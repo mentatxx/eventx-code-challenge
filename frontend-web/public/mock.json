@@ -1,0 +1,37 @@
+{
+  "btc-usd": {
+    "base": "BTC",
+    "target": "USD",
+    "price": "60776.37976749",
+    "volume": "48739.20096004",
+    "change": "-79.28083070"
+  },
+  "btc2-usd": {
+    "base": "BTC2",
+    "target": "USD",
+    "price": "60776.37976749",
+    "volume": "48739.20096004",
+    "change": "9.28083070"
+  },
+  "btc3-usd": {
+    "base": "BTC3",
+    "target": "USD",
+    "price": "60776.37976749",
+    "volume": "48739.20096004",
+    "change": "79.28083070"
+  },
+  "btc4-usd": {
+    "base": "BTC4",
+    "target": "USD",
+    "price": "60776.37976749",
+    "volume": "48739.20096004",
+    "change": "-79.28083070"
+  },
+  "btc5-usd": {
+    "base": "BTC5",
+    "target": "USD",
+    "price": "60776.37976749",
+    "volume": "48739.20096004",
+    "change": "-79.28083070"
+  }
+}
