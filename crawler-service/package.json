@@ -6,8 +6,8 @@
   "scripts": {
     "cross-env": "cross-env",
     "sls": "sls",
-    "local": "sls invoke local -f crawler --path src/functions/cryptonator-crawler/mock.json",
-    "deploy": "cross-env AWS_PROFILE=mentat sls deploy",
+    "local": "sls invoke local -f crawler --path src/functions/cryptonator-crawler/mock.json --aws-profile mentat",
+    "deploy": "sls deploy --stage dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
@@ -17,11 +17,13 @@
     "@middy/core": "^2.5.3",
     "@middy/http-json-body-parser": "^2.5.3",
     "@types/axios": "^0.14.0",
+    "aws-sdk": "^2.1028.0",
     "axios": "^0.24.0"
   },
   "devDependencies": {
     "@serverless/typescript": "^2.23.0",
     "@types/aws-lambda": "^8.10.71",
+    "@types/aws-sdk": "^2.7.0",
     "@types/node": "^14.14.25",
     "cross-env": "^7.0.3",
     "json-schema-to-ts": "^1.5.0",

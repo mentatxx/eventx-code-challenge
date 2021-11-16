@@ -1,4 +1,6 @@
 {
     "profile": "mentat",
-    "S3URN": "arn:aws:s3:::eventx-data"
+    "S3URN": "arn:aws:s3:::eventx-data",
+    "S3Bucket": "eventx-data",
+    "S3Region": "eu-west-1"
 }

@@ -16,6 +16,8 @@ const serverlessConfiguration: AWS = {
     environment: {
       AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1',
       NODE_OPTIONS: '--enable-source-maps --stack-trace-limit=1000',
+      BUCKET_NAME: "${file(./config/${opt:stage, 'dev'}.json):S3Bucket}",
+      S3_REGION: "${file(./config/${opt:stage, 'dev'}.json):S3Region}",
     },
     iamRoleStatements: [
       {
