@@ -8,6 +8,15 @@ interface TickerProps {
 
 const abbrToNameMap: Record<string, string> = {
   BTC: 'Bitcoin',
+  ETH: 'Ether',
+  LTC: 'Litecoin',
+  XMR: 'Monero',
+  XRP: 'Ripple',
+  DOGE: 'Dogecoin',
+  DASH: 'Dash',
+  MAID: 'MaidSafeeCoin',
+  LSK: 'Lisk',
+  SJCX: 'Storjcoin X',
 };
 
 function nameFromAbbr(abbr: string): string {

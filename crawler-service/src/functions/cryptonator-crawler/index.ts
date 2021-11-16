@@ -15,5 +15,8 @@ export default {
         },
       },
     },
+    {
+      schedule: 'rate(1 minute)',
+    },
   ],
 };
