@@ -15,6 +15,8 @@ const crawl: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async () => {
     'doge-usd',
     'dash-usd',
     'maid-usd',
+    'lsk-usd',
+    'sjcx-usd',
   ]);
   await persistTickers(tickers);
   return formatJSONResponse({
