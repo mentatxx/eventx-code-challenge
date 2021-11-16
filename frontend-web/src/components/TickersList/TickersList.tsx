@@ -27,7 +27,7 @@ function notEmpty<TValue>(value: TValue | null | undefined): value is TValue {
 
 function TickersList() {
   const [{ data, loading, error }, refetch] =
-    useAxios<TickerServiceResponse>('/mock.json');
+    useAxios<TickerServiceResponse>('/tickers.json');
   // Data is updated every minute on server
   useEffect(() => {
     refetch();

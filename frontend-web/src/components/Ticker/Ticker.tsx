@@ -42,10 +42,12 @@ export const Details = styled.div`
   line-height: 1.2;
 `;
 export const Volume = styled.div`
-  flex: 0 0 50%;
+  flex: 1 0 50%;
+  padding-right: 5px;
 `;
 export const Change = styled.div<{ negative: boolean }>`
-  flex: 0 0 50%;
+  flex: 1 0 50%;
+  padding-left: 5px;
 
   span {
     color: ${({ negative }) => (negative ? 'red' : 'green')};
